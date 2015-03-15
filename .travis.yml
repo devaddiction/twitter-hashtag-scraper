@@ -1,0 +1,12 @@
+language: php
+php:
+  - 5.5
+services:
+  - redis-server
+before_script:
+  - cd app
+  - composer self-update
+  - composer install --prefer-source --no-interaction
+script: phpunit
+after_success:
+  - coveralls

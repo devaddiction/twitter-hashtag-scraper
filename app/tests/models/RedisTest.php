@@ -73,6 +73,12 @@ class RedisTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(3, $this->redisObject->getTotalTweetCount());
     }
 
+    public function testClear()
+    {
+        $this->redisObject()->clear();
+        $this->assertEquals(0, $this->redisObject->getTotalTweetCount());
+    }
+
     /**
      * Clean up the database
      */

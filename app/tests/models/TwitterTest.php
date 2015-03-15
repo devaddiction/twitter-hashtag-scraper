@@ -47,13 +47,4 @@ class TwitterTest extends \PHPUnit_Framework_TestCase
         }
     }
 
-    /**
-     * Test tweets are fetched
-     */
-    public function testTweetsAreFetched()
-    {
-        $result = $this->twitterObject->getTweets();
-        $this->assertTrue($result['status']);
-    }
-
 }

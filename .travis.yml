@@ -5,8 +5,16 @@ services:
   - redis-server
 before_script:
   - cd app
+  - wget http://getcomposer.org/composer.phar
+  - php composer.phar install --dev --no-interaction
   - composer self-update
   - composer install --prefer-source --no-interaction
-script: phpunit
-after_success:
-  - coveralls
+
+script:
+  - cd app
+  - mkdir -p build/logs
+  - phpunit --coverage-clover build/logs/clover.xml
+
+after_script:
+  - cd app
+  - php vendor/bin/coveralls -v

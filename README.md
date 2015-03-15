@@ -1,7 +1,7 @@
 Twitter Hashtag Scraper
 ========================
 [![Build Status](https://travis-ci.org/devaddiction/twitter-hashtag-scraper.svg?branch=master)](https://travis-ci.org/devaddiction/twitter-hashtag-scraper)
-[![Coverage Status](https://coveralls.io/repos/devaddiction/twitter-hashtag-scraper/badge.svg)](https://coveralls.io/r/devaddiction/twitter-hashtag-scraper)
+[![Coverage Status](https://coveralls.io/repos/devaddiction/twitter-hashtag-scraper/badge.svg?branch=master)](https://coveralls.io/r/devaddiction/twitter-hashtag-scraper?branch=master)
 
 Fetch and display tweets based on a customizable hashtag.
 
